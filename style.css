@@ -7,3 +7,16 @@
     height: 621px;
     width: 668px;
 }
+
+#jogoContainer #painel 
+{
+    background-color: white;
+
+
+}
+
+.jogador {
+    height: 20px;
+    width: 20px;
+    position: relative;
+}
