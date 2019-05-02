@@ -20,26 +20,33 @@
             </div>
 
             <div id="lateral" class="col-6">
-                <!--form qtd jogadores jogadores
-                <div class="form-group">
+
+                <!--form qtd jogadores jogadores -->
+                <div class="form-group" id="form-qtd-jogadores">
                     <label for="input-numero-jogadores">Escolha numero de jogadores</label>
                     <select class="form-control" id="input-numero-jogadores">
-                        <option>2</option>  
+                        <option>2</option>
                         <option>3</option>
                         <option>4</option>
                     </select>
                     <br />
-                    <button onclick="" type="button" class="btn btn-success">Confirmar</button>
-                </div> -->
-                <div class="form-group" >
-                       <input type="text" class="form-control" placeholder="Nome do Jogador 1" aria-label="Username"
+                    <button onclick="$.clickJogadores($.getInt('input-numero-jogadores'))"
+                        type="button" class="btn btn-success">Confirmar</button>
+                </div>
+
+                 <!--form setup jogador -->
+                <div id="form-setup-jogador" style="display: none;">
+                    <div class="form-group" >
+                        <input type="text" class="form-control" placeholder="Nome do Jogador 1" aria-label="Username"
                             aria-describedby="basic-addon1">
-                        
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+
+                                <div class="carousel-item active" >
                                     <img src="imagens/pizzas/calabresa/calabresa.png" class="d-block w-100" alt="...">
                                 </div>
+
                                 <div class="carousel-item">
                                     <img src="imagens/pizzas/marguerita/marguerita.png" class="d-block w-100" alt="...">
                                 </div>
@@ -56,12 +63,12 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                      
+
+                    </div>
+                    <div class="form-group center">
+                        <button type="button" class="btn btn-primary form-control">Confirmar jogador</button>
+                    </div>
                 </div>
-                <div class="form-group center" >
-                  <button type="button" class="btn btn-primary form-control">Confirmar jogador</button>
-                </div>
-            
 
 
             </div>
@@ -70,10 +77,11 @@
 
     </div>
 
-
+    <script type="text/javascript" src="controller.js"></script>
     <script type="text/javascript" src="game.js"></script>
     <script>
-        game.load(document.getElementById("jogoContainer"));
+        $.init(document.getElementById("jogoContainer"))
+        //game.load(document.getElementById("jogoContainer"));
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
