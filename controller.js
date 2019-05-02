@@ -10,12 +10,12 @@ const $ = {
         game.setNumeroJogadores(numeroJogadores);
         
         this.esconder(this.get('form-qtd-jogadores'));
-        addPizzasSetup();
+        this.addPizzasSetup();
         this.exibir(this.get('form-setup-jogador'));
     },
 
     addPizzasSetup: function(){
-        
+        return null;
     },
 
 
