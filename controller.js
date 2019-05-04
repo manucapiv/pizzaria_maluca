@@ -14,6 +14,7 @@ const $ = {
         this.exibir(this.get('form-setup-jogador'));
     },
 
+    
     addPizzasSetup: function(){
         return null;
     },

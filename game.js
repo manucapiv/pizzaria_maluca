@@ -5,20 +5,12 @@ const game = {
     numeroJogadores: 0,
 
     pedacosPizza: [
-        // calabresa
-        {
-            nome: "calabresa",
-            ingredientes: [
-                { nome: "tomate", obtido: false },
-                { nome: "peperoni", obtido: false },
-                { nome: "azeitona", obtido: false },
-                { nome: "cebola", obtido: false },
-                { nome: "queijo", obtido: false }
-            ]
-        }
+       criarPedacoPizza("calabresa",[])
 
 
     ],
+
+   
 
     casas: [
         { numero: 1, nome: "Milho", coordenada: { top: 5, left: 49 }, jogadores: [] },
@@ -136,6 +128,19 @@ const game = {
             cor: cor,
             casa: casa
         }
+    },
+
+    criarPedacoPizza: function(nome, ingredientes){
+        return {
+            nome: nome,
+            ingredientes: [
+                { nome: ingredientes[0], obtido: false },
+                { nome: ingredientes[1], obtido: false },
+                { nome: ingredientes[2], obtido: false },
+                { nome: ingredientes[3], obtido: false },
+                { nome: ingredientes[4], obtido: false }
+            ]
+        }    
     }
 
 
