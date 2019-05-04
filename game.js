@@ -5,10 +5,13 @@ const game = {
     numeroJogadores: 0,
 
     pedacosPizza: [
-       criarPedacoPizza("calabresa",[])
+       criarPedacoPizza("calabresa",["tomate","peperoni","azeitona","cebola","queijo"]),
+       criarPedacoPizza("marguerita",["queijo","brocolis","peperoni","milho","tomate"]),
+       criarPedacoPizza("portugusa",["ovo","azeitona","presunto","queijo","milho"]),
+       criarPedacoPizza("calabresa",["tomate","peperoni","azeitona","cebola","queijo"]),
 
 
-    ],
+    ]
 
    
 
