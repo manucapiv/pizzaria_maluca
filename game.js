@@ -8,7 +8,9 @@ const game = {
        criarPedacoPizza("calabresa",["tomate","peperoni","azeitona","cebola","queijo"]),
        criarPedacoPizza("marguerita",["queijo","brocolis","peperoni","milho","tomate"]),
        criarPedacoPizza("portugusa",["ovo","azeitona","presunto","queijo","milho"]),
-       criarPedacoPizza("calabresa",["tomate","peperoni","azeitona","cebola","queijo"]),
+       criarPedacoPizza("romana",["azeitona","presunto","milho","cebola","queijo"]),
+       criarPedacoPizza("toscana",["cebola","presunto","tomate","azeitona","peperoni"]),
+       criarPedacoPizza("vegetariana",["ervilha","milho","brocolis","tomate","cebola"]),
 
 
     ]
